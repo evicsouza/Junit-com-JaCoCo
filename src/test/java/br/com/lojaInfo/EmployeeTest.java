@@ -37,7 +37,7 @@ public class EmployeeTest {
 	@Test
 	public void setNomeTeste() {
 		employee.setNome("Ana");
-		assertTrue(true);
+		assertTrue(employee.getNome() == "Ana");
 	}
 
 	@Test

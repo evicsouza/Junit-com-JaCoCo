@@ -17,19 +17,19 @@ public class DateTest {
 	@Test
 	public void setMesTeste() {
 		date.setMes(3);
-		assertTrue(true);
+		assertTrue(date.getMes() == 3);
 	}
 
 	@Test
 	public void setDiaTeste() {
 		date.setDia(4);
-		assertTrue(true);
+		assertTrue(date.getDia() == 4);
 	}
 
 	@Test
 	public void setAnoTeste() {
 		date.setAno(2022);
-		assertTrue(true);
+		assertTrue(date.getAno() == 2022);
 	}
 
 	@Test

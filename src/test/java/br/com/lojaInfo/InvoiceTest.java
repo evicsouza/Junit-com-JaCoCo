@@ -20,7 +20,7 @@ public class InvoiceTest {
 	public void getQtdeCompradaTeste() {
 		assertEquals(2, invoice.getQtdeComprada(), 0);
 	}
-	
+
 	@Test
 	public void getPrecoTeste() {
 		assertEquals(10.5, invoice.getPrecoItem(), 0);
@@ -29,19 +29,19 @@ public class InvoiceTest {
 	@Test
 	public void setNumeroTeste() {
 		invoice.setNumero("579");
-		assertFalse(false);
+		assertFalse(invoice.getNumero() != "579");
 	}
 
 	@Test
 	public void setDescricaoTeste() {
 		invoice.setDescricao("Livro fantasia");	
-		assertTrue(true);
+		assertTrue(invoice.getDescricao() == "Livro fantasia");
 	}
 
 	@Test
 	public void setQuantidadeTeste() {
 		invoice.setQtdeComprada(18);	
-		assertTrue(true);
+		assertTrue(invoice.getQtdeComprada() == 18);
 	}
 
 	@Test
